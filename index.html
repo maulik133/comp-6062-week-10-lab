@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>comp-6062-week-10-lab</title>
+</head>
+<body>
+    <h1>Week 10 Lab</h1>
+    <div id="app">
+        <input type="text" v-model="firstName" placeholder="First Name">
+        <input type="text" v-model="lastName" placeholder="Last Name">
+        <p>Full Name: {{ fullName }}</p>
+        <input type="number" v-model="quantity" min="0" placeholder="Quantity">
+        <p>Price per item: {{ pricePerItem }}</p>
+        <p>Total price: {{ totalPrice }}</p>
+        <button @click="clearFields">Clear Fields</button>
+    </div>
+    <script src="https://unpkg.com/vue@3.4.31/dist/vue.global.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
